@@ -24,3 +24,6 @@ jobs:
       env:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn org.eluder.coveralls:coveralls-maven-plugin:report
+    - name: Run Coveralls
+      run: mvn org.eluder.coveralls:coveralls-maven-plugin:4.3.0:report
+      working-directory: ./roman-number
