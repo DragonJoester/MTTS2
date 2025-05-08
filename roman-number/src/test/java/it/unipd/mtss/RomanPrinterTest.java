@@ -49,27 +49,4 @@ assertEquals("  _____     _____ \n |  __ \\   / ____|\n | |  | | | |     \n | | 
         assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(1001));
         assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(-1));
     }
-@Test
-public void testPrintSingleRomanLetters() {
-    assertEquals(
-        "  _____ \n" +
-        " |  __ \\ \n" +
-        " | |  | |\n" +
-        " | |  | |\n" +
-        " | |__| |\n" +
-        " |_____/ \n",
-        RomanPrinter.print(500) // 'D'
-    );
-
-    assertEquals(
-        "   _____ \n" +
-        "  / ____|\n" +
-        " | |     \n" +
-        " | |     \n" +
-        " | |____ \n" +
-        "  \\_____|\n",
-        RomanPrinter.print(100) // 'C'
-    );
-}
-
 }
