@@ -99,13 +99,11 @@
             <version>0.8.7</version> 
             <executions>
                 <execution>
-                    <id>prepare-agent1</id>
                     <goals>
                         <goal>prepare-agent</goal> 
                     </goals>
                 </execution>
                 <execution>
-                    <id>prepare-agent2</id>
                     <goals>
                         <goal>report</goal> 
                     </goals>
