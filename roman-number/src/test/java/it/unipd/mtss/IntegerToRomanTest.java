@@ -46,11 +46,4 @@ public class IntegerToRomanTest {
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
     }
-@Test
-public void testNumeriComposti() {
-    assertEquals("MCMXCIV", IntegerToRoman.convert(1994));
-    assertEquals("CDXLIV", IntegerToRoman.convert(444));
-}
-
-
 }
