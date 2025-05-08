@@ -44,4 +44,11 @@ public class IntegerToRomanTest {
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
     }
+@Test
+    public void testConvertBoundaryValues() { 
+        assertEquals("XLIX", IntegerToRoman.convert(49)); 
+        assertEquals("XCIX", IntegerToRoman.convert(99)); 
+        assertEquals("CDXCIV", IntegerToRoman.convert(494)); 
+        assertEquals("DCCCXC", IntegerToRoman.convert(890)); 
+    }
 }
