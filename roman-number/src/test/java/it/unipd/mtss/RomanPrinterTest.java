@@ -49,4 +49,15 @@ assertEquals("  _____     _____ \n |  __ \\   / ____|\n | |  | | | |     \n | | 
         assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(1001));
         assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(-1));
     }
+
+@Test
+    public void testStampaSimboliSingoli() {
+        assertEquals(expectedAsciiFor("I"), RomanPrinter.print(1));
+        assertEquals(expectedAsciiFor("V"), RomanPrinter.print(5));
+        assertEquals(expectedAsciiFor("X"), RomanPrinter.print(10));
+        assertEquals(expectedAsciiFor("L"), RomanPrinter.print(50));
+        assertEquals(expectedAsciiFor("C"), RomanPrinter.print(100));
+        assertEquals(expectedAsciiFor("D"), RomanPrinter.print(500));
+        assertEquals(expectedAsciiFor("M"), RomanPrinter.print(1000));
+    }
 }
