@@ -37,8 +37,6 @@ public class IntegerToRomanTest {
         assertEquals("DCCC", IntegerToRoman.convert(800));
         assertEquals("CM", IntegerToRoman.convert(900));
         assertEquals("M", IntegerToRoman.convert(1000));
-
-
     }
 @Test
     public void testIllegalArgumentException() {
